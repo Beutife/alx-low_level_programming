@@ -1,4 +1,4 @@
-#include "Beulah.h"
+#include "main.h"
 /**
  * main - Entry point
  *
@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	char *sh = "Beulah";
-
-	while (*sh)
+	char c[9] = "0-putchar";
+	int i = 0;
+        while (i < 8)
 	{
-		_putchar(*sh);
-		sh++;
+		_putchar(c[i]);
+		i++;
 	}
 	_putchar('\n');
 
